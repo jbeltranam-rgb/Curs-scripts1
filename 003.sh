@@ -17,6 +17,11 @@ PRODUCTE=$((X*Y))
 
 echo "${X}*${Y}=${PRODUCTE}"
 
-DIVISIO=$((X/Y))
 
-echo "${X}/${Y}=${DIVISIO}"
+if [[ ${Y} -eq 0 ]]
+then
+    echo "AIXO PETA!!"
+else
+    DIVISIO=$((X/Y))
+    echo "${X}/${Y}=${DIVISIO}"
+fi
