@@ -35,7 +35,7 @@ then
     echo "Errada Canviant password"
     exit 1
 
-fi
+fi 
 
 #fer el caducar el password
 passwd -e ${USER_NAME}
