@@ -15,7 +15,7 @@ read -p "Introdueix el nom complet: " COMMENTS
 #demanam el nom de l'usuari
 read -p "Introdueix el nom d'usuari: " USER_NAME
 #demanam el password
-read -p "Introdueix el password: " PASSWORD
+PASSWORD=$(date +%s%N | sha256sum | head -c8 )
 
 echo "creant l'usauri ${USER_NAME}"
 
@@ -34,10 +34,12 @@ if [[ ${?} -ne 0 ]]
 then
     echo "Errada Canviant password"
     exit 1
-
+  
 fi
 
 #fer el caducar el password
 passwd -e ${USER_NAME}
 
-exit 0
+echo "Usuari creat: ${USER_NAME}"
+echo "password generat: ${PASSWORD}"
+echo "HostName: ${HOSTNAME}"

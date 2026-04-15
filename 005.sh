@@ -34,7 +34,7 @@ if [[ ${?} -ne 0 ]]
 then
     echo "Errada Canviant password"
     exit 1
-  
+
 fi
 
 #fer el caducar el password
