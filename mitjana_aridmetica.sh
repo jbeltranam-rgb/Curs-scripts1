@@ -11,4 +11,4 @@ done
 
 MITJANA=$((SUMA / TOTAL))
 
-echo "La mitjana es: $MITJANA"
+echo "La mitjana de $TOTAL valors es: $MITJANA"
