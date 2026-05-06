@@ -15,4 +15,4 @@ do
     RESULTAT=$((RESULTAT * i))
 done
 
-echo "Factorial es: $RESULTAT"
+echo "El factorial es: $RESULTAT"
