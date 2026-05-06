@@ -2,7 +2,8 @@
 
 if [[ $# -ne 1 ]]
 then
-    echo "error: se requiere un parametro"
+    echo "error: se requiere un solo parametro"
+    exit 1
 fi
 
 echo "vamos a calcular el sumatorio de $1"
