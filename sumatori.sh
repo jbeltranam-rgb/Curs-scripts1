@@ -18,4 +18,5 @@ done
 
 echo "El valor del sumatorio es: $SUMA"
 
+
 exit 0
